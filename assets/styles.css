@@ -1,0 +1,74 @@
+body {
+    font-family: 'PT Sans', sans-serif;
+}
+
+@keyframes animationleft {
+    from {
+        margin-left: -100%;
+    }
+    to {
+        margin-left: 0px;
+    }
+}
+
+
+.font-bigger {
+    font-size: 150%;
+}
+
+.bg-light-blue {
+    background-color: #b8ddff!important;
+}
+
+.bg-light-green {
+    background-color: #caf0db;
+}
+
+.sidebar {
+    background-color: rgba(0, 0, 0, 0.9);
+    height: 100%;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 300px;
+    max-width: 50vw;
+    z-index: 1032;
+    display: none;
+    animation-name: animationleft;
+    animation-duration: 0.4s;
+}
+
+.overlay-container {
+    position: fixed;
+    top: 0px;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1031;
+    display: none;
+}
+
+.close-icon {
+    color: white;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    font-size: 2.4rem;
+}
+
+.contact-sidebar {
+    font-size: 1.5rem;
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-decoration: none!important;
+}
+
+.fa-bars:hover {
+    cursor: pointer;
+}
+
+.more-btn:hover {
+    opacity: 0.6;
+}
